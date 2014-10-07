@@ -14,7 +14,7 @@ tau.mashups
   .addMashup(function($, BusListeners) {
     var prefixes = ['To Do (', 'Planned (', 'Done ('];
 
-    BusListeners.Add('board_plus', 'cardsFullyLoaded',
+    BusListeners.Add('board_plus', 'boardLayout.ready',
         function strip_all(e, data) {
             var headings = $('.i-role-axis-item .i-role-name');
             for (var i = 0; i < headings.length; i++) {
